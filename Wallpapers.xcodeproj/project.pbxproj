@@ -11,15 +11,21 @@
 		824958DE1D2131DE007550E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824958DD1D2131DE007550E7 /* ViewController.swift */; };
 		824958E01D2131DE007550E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824958DF1D2131DE007550E7 /* Assets.xcassets */; };
 		824958E31D2131DE007550E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824958E11D2131DE007550E7 /* Main.storyboard */; };
+		8253E7EA1D223BDF00AA9157 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253E7E91D223BDF00AA9157 /* Api.swift */; };
+		954C311E0152B512B0F05090 /* Pods_Wallpapers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCC3912231B44BE8D8A74D1 /* Pods_Wallpapers.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FCC3912231B44BE8D8A74D1 /* Pods_Wallpapers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wallpapers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3644A62DFB38BA68354CCD13 /* Pods-Wallpapers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallpapers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wallpapers/Pods-Wallpapers.release.xcconfig"; sourceTree = "<group>"; };
+		59801F9B83E82F3AD44D3EBE /* Pods-Wallpapers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallpapers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wallpapers/Pods-Wallpapers.debug.xcconfig"; sourceTree = "<group>"; };
 		824958D81D2131DE007550E7 /* Wallpapers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallpapers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		824958DB1D2131DE007550E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		824958DD1D2131DE007550E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		824958DF1D2131DE007550E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		824958E21D2131DE007550E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		824958E41D2131DE007550E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8253E7E91D223BDF00AA9157 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				954C311E0152B512B0F05090 /* Pods_Wallpapers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		169F149D88D09B9DE4648758 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59801F9B83E82F3AD44D3EBE /* Pods-Wallpapers.debug.xcconfig */,
+				3644A62DFB38BA68354CCD13 /* Pods-Wallpapers.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		824958CF1D2131DE007550E7 = {
 			isa = PBXGroup;
 			children = (
 				824958DA1D2131DE007550E7 /* Wallpapers */,
 				824958D91D2131DE007550E7 /* Products */,
+				169F149D88D09B9DE4648758 /* Pods */,
+				AFED7F19FD0C4FF1A6C86609 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,8 +75,17 @@
 				824958DF1D2131DE007550E7 /* Assets.xcassets */,
 				824958E11D2131DE007550E7 /* Main.storyboard */,
 				824958E41D2131DE007550E7 /* Info.plist */,
+				8253E7E91D223BDF00AA9157 /* Api.swift */,
 			);
 			path = Wallpapers;
+			sourceTree = "<group>";
+		};
+		AFED7F19FD0C4FF1A6C86609 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FCC3912231B44BE8D8A74D1 /* Pods_Wallpapers.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 824958E71D2131DE007550E7 /* Build configuration list for PBXNativeTarget "Wallpapers" */;
 			buildPhases = (
+				84065C034B11F2A8C87D67A9 /* [CP] Check Pods Manifest.lock */,
 				824958D41D2131DE007550E7 /* Sources */,
 				824958D51D2131DE007550E7 /* Frameworks */,
 				824958D61D2131DE007550E7 /* Resources */,
+				14FC3B2D719DE03CABB33312 /* [CP] Embed Pods Frameworks */,
+				AB5CB26AE0B7C2FFCA863BA0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,11 +156,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14FC3B2D719DE03CABB33312 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wallpapers/Pods-Wallpapers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84065C034B11F2A8C87D67A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB5CB26AE0B7C2FFCA863BA0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wallpapers/Pods-Wallpapers-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		824958D41D2131DE007550E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8253E7EA1D223BDF00AA9157 /* Api.swift in Sources */,
 				824958DE1D2131DE007550E7 /* ViewController.swift in Sources */,
 				824958DC1D2131DE007550E7 /* AppDelegate.swift in Sources */,
 			);
@@ -234,6 +313,7 @@
 		};
 		824958E81D2131DE007550E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59801F9B83E82F3AD44D3EBE /* Pods-Wallpapers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -246,6 +326,7 @@
 		};
 		824958E91D2131DE007550E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3644A62DFB38BA68354CCD13 /* Pods-Wallpapers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -275,6 +356,7 @@
 				824958E91D2131DE007550E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
