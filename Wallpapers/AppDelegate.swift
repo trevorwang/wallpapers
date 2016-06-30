@@ -18,6 +18,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if let button = statusItem.button {
             button.image = NSImage(named: "StatusBarButtonImage")
         }
+        
+        Monitor.hello()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		821F159B1D25084D00E16B6F /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F159A1D25084D00E16B6F /* Monitor.swift */; };
 		824958DC1D2131DE007550E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824958DB1D2131DE007550E7 /* AppDelegate.swift */; };
 		824958DE1D2131DE007550E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824958DD1D2131DE007550E7 /* ViewController.swift */; };
 		824958E01D2131DE007550E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824958DF1D2131DE007550E7 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		1FCC3912231B44BE8D8A74D1 /* Pods_Wallpapers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wallpapers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3644A62DFB38BA68354CCD13 /* Pods-Wallpapers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallpapers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wallpapers/Pods-Wallpapers.release.xcconfig"; sourceTree = "<group>"; };
 		59801F9B83E82F3AD44D3EBE /* Pods-Wallpapers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallpapers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wallpapers/Pods-Wallpapers.debug.xcconfig"; sourceTree = "<group>"; };
+		821F159A1D25084D00E16B6F /* Monitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monitor.swift; sourceTree = "<group>"; };
 		824958D81D2131DE007550E7 /* Wallpapers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallpapers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		824958DB1D2131DE007550E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		824958DD1D2131DE007550E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				824958E11D2131DE007550E7 /* Main.storyboard */,
 				824958E41D2131DE007550E7 /* Info.plist */,
 				8253E7E91D223BDF00AA9157 /* Api.swift */,
+				821F159A1D25084D00E16B6F /* Monitor.swift */,
 			);
 			path = Wallpapers;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				821F159B1D25084D00E16B6F /* Monitor.swift in Sources */,
 				8253E7EA1D223BDF00AA9157 /* Api.swift in Sources */,
 				824958DE1D2131DE007550E7 /* ViewController.swift in Sources */,
 				824958DC1D2131DE007550E7 /* AppDelegate.swift in Sources */,

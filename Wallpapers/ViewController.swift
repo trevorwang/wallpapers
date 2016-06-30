@@ -9,7 +9,7 @@
 import Cocoa
 import Moya_ObjectMapper
 import SnapKit
-import Alamofire
+import Moya
 
 class ViewController: NSViewController {
     var wallpapers = [Wallpaper]()
